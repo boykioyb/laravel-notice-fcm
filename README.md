@@ -3,9 +3,11 @@ Laravel send notifications by fcm
 
 > php artisan vendor:publish --force
 
+> Select notify-configs, notify-migrations
+
 > php artisan migrate
 
-Edit Logging config
+Edit logging config
 =======================
 
 > open file config/logging.php
@@ -25,3 +27,4 @@ return [
 ]
 ?>
 ```
+> Add NOTIFICATION_FCM_API_KEY to .env
