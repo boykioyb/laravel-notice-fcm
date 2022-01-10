@@ -20,8 +20,6 @@ class SendNotify implements ShouldQueue
 {
     use InteractsWithQueue, Queueable;
 
-    public $afterCommit = true;
-
     private $log;
 
     /**
