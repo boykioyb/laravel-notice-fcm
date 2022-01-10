@@ -21,8 +21,6 @@ class SendNotifyRecord implements ShouldQueue
 {
     use InteractsWithQueue, Queueable;
 
-    public $afterCommit = true;
-
     protected $notifyRecord;
 
     private $log;
