@@ -21,7 +21,7 @@ class HashID
      */
     public static function idEncode($integer, $length = 8)
     {
-        $hashids = new Hashids(config('notification.hash_id.salt'), $length, config('hashing.hash_id.alphabet'));
+        $hashids = new Hashids(config('notification.hash_id.salt'), $length, config('notification.hash_id.alphabet'));
 
         return $hashids->encode($integer);
     }
@@ -34,7 +34,7 @@ class HashID
      */
     public static function idDecode($string, $length = 8)
     {
-        $hashids = new Hashids(config('notification.hash_id.salt'), $length, config('hashing.hash_id.alphabet'));
+        $hashids = new Hashids(config('notification.hash_id.salt'), $length, config('notification.hash_id.alphabet'));
 
         $ids = $hashids->decode($string);
 
